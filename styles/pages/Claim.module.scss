@@ -1,0 +1,79 @@
+// Claim page
+.claim {
+  // Sizing
+  max-width: 400px;
+  text-align: center;
+  padding: 1rem;
+}
+
+// Individual card container
+.card {
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid rgb(227, 227, 227);
+  padding: 2rem;
+  max-width: 500px;
+  box-shadow: rgb(117 117 117 / 10%) 0px 10px 20px 5px;
+  text-align: center;
+
+  // Header
+  > h1 {
+    margin: 0px;
+    line-height: 1.2;
+    font-size: 25px;
+  }
+
+  // Description
+  > p {
+    line-height: 1.5;
+    margin: 1rem 0px;
+  }
+
+  > button {
+    margin-top: 1rem;
+    font-weight: 500;
+    padding: 1rem;
+    font-size: 16px;
+    align-self: center !important;
+    background: transparent !important;
+    padding: 1rem 1rem !important;
+    margin: 0 1rem !important;
+    transition: all 0.5s ease !important;
+    color: #41403e !important;
+    // font-size: 2rem !important;
+    letter-spacing: 1px !important;
+    outline: none !important;
+    box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2) !important;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px !important;
+    /*
+      Above is shorthand for:
+      border-top-left-radius: 255px 15px !important;
+      border-top-right-radius: 15px 225px !important;
+      border-bottom-right-radius: 225px 15px !important;
+      border-bottom-left-radius:15px 255px !important;
+      */
+    &:hover {
+      box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3) !important;
+    }
+    &.lined.thick {
+      border: solid 7px #41403e !important;
+    }
+
+    &:hover {
+      border-color: rgb(201, 201, 201);
+    }
+
+    // Disable border color change on disabled hover
+    &:disabled:hover {
+      border-color: rgb(255, 255, 255) !important;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      border-color: rgb(255, 255, 255) !important;
+      cursor: not-allowed;
+    }
+
+    text-transform: uppercase;
+  }
+}
